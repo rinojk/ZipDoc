@@ -1,0 +1,9 @@
+C:\Users\SEREY\Google Диск\KPI\Лаби\ООП\ZipDoc\ZipDoc\ZipDocDAL\bin\Debug\ZipDocDAL.dll.config
+C:\Users\SEREY\Google Диск\KPI\Лаби\ООП\ZipDoc\ZipDoc\ZipDocDAL\bin\Debug\ZipDocDAL.dll
+C:\Users\SEREY\Google Диск\KPI\Лаби\ООП\ZipDoc\ZipDoc\ZipDocDAL\bin\Debug\ZipDocDAL.pdb
+C:\Users\SEREY\Google Диск\KPI\Лаби\ООП\ZipDoc\ZipDoc\ZipDocDAL\bin\Debug\MySql.Data.dll
+C:\Users\SEREY\Google Диск\KPI\Лаби\ООП\ZipDoc\ZipDoc\ZipDocDAL\obj\Debug\ZipDocDAL.dll
+C:\Users\SEREY\Google Диск\KPI\Лаби\ООП\ZipDoc\ZipDoc\ZipDocDAL\obj\Debug\ZipDocDAL.pdb
+C:\Users\SEREY\Google Диск\KPI\Лаби\ООП\ZipDoc\ZipDoc\ZipDocDAL\obj\Debug\ZipDocDAL.csprojResolveAssemblyReference.cache
+C:\Users\SEREY\Google Диск\KPI\Лаби\ООП\ZipDoc\ZipDoc\ZipDocDAL\bin\Debug\ZipDocModel.dll
+C:\Users\SEREY\Google Диск\KPI\Лаби\ООП\ZipDoc\ZipDoc\ZipDocDAL\bin\Debug\ZipDocModel.pdb

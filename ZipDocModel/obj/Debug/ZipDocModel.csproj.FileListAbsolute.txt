@@ -1,0 +1,5 @@
+C:\Users\SEREY\Google Диск\KPI\Лаби\ООП\ZipDoc\ZipDoc\ZipDocModel\bin\Debug\ZipDocModel.dll
+C:\Users\SEREY\Google Диск\KPI\Лаби\ООП\ZipDoc\ZipDoc\ZipDocModel\bin\Debug\ZipDocModel.pdb
+C:\Users\SEREY\Google Диск\KPI\Лаби\ООП\ZipDoc\ZipDoc\ZipDocModel\obj\Debug\ZipDocModel.csprojResolveAssemblyReference.cache
+C:\Users\SEREY\Google Диск\KPI\Лаби\ООП\ZipDoc\ZipDoc\ZipDocModel\obj\Debug\ZipDocModel.dll
+C:\Users\SEREY\Google Диск\KPI\Лаби\ООП\ZipDoc\ZipDoc\ZipDocModel\obj\Debug\ZipDocModel.pdb
