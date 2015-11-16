@@ -110,17 +110,19 @@ namespace ZipDoc.ViewModel
                     if (_rememberMe)
                     {
                         Properties.Settings.Default.Token = user.Token;
+                        Properties.Settings.Default.Save();
                     }
+                    
                     //Opening main window
                     var mainVM = new MainWindowView()
                     {
-                        DataContext = new MainWindowViewModel(_user)};
+                        DataContext = new MainWindowViewModel(/*_user*/)};
                     mainVM.Show();
                     Application.Current.MainWindow.Close();
                 }
                 else
                 {
-                    MessageBox.Show("Error with authorisation!");
+                    MessageBox.Show("Error with authorization!");
                 }
             }
         }
@@ -151,8 +153,7 @@ namespace ZipDoc.ViewModel
                     //Opening main window
                     var mainVM = new MainWindowView()
                     {
-                        DataContext = new MainWindowViewModel(_user)
-                    };
+                        DataContext = new MainWindowViewModel(/*_user*/)};
                     mainVM.Show();
 
                     Application.Current.MainWindow.Close();

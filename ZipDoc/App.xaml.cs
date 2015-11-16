@@ -17,11 +17,23 @@ namespace ZipDoc
     {
         public App()
         {
-            var loginVM = new LoginView
+
+            if (string.IsNullOrEmpty(ZipDoc.Properties.Settings.Default.Token))
             {
-                DataContext = new LoginViewModel()
-            };
-            loginVM.Show();
+                var loginVM = new LoginView
+                {
+                    DataContext = new LoginViewModel()
+                };
+                loginVM.Show();
+            }
+            else
+            {
+                var mainVM = new MainWindowView
+                {
+                    DataContext = new MainWindowViewModel()
+                };
+                mainVM.Show();
+            }
         }
     }
 }

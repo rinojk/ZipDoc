@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Collections.ObjectModel;
 using System.ComponentModel;
 using System.Linq;
 using System.Runtime.CompilerServices;
@@ -14,16 +15,27 @@ namespace ZipDoc.ViewModel
 {
     class MainWindowViewModel : INotifyPropertyChanged
     {
-        public MainWindowViewModel(User user)
+        public MainWindowViewModel()
         {
             ClickCommand = new Command(arg => ClickMethod());
-            User = user;
-            MessageBox.Show(_user.Username);
+            /*User = user;
+            //MessageBox.Show(_user.Username);
+            */
+            Docs.Add(new Document
+            {
+                Name = "azaza", Id = 100500
+            });
+            Docs.Add(new Document
+            {
+                Name = "Asdsa", Id = 65196849
+            });
         }
 
+        
         #region Fields
 
         private User _user;
+        private ObservableCollection<Document> _docs = new ObservableCollection<Document>();
 
         #endregion
 
@@ -36,6 +48,16 @@ namespace ZipDoc.ViewModel
             {
                 _user = value;
                 OnPropertyChanged(nameof(User));
+            }
+        }
+
+        public ObservableCollection<Document> Docs
+        {
+            get { return _docs; }
+            set
+            {
+                _docs = value;
+                OnPropertyChanged(nameof(Docs));
             }
         }
 

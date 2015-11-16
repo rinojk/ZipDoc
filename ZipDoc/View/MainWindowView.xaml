@@ -25,14 +25,14 @@
         <TextBox x:Name="textBox" Style="{StaticResource TextBoxStyle}" Height="30" Margin="117,10,315,0" TextWrapping="Wrap" VerticalAlignment="Top"/>
         <Button x:Name="searchButton" Style="{StaticResource ButtonStyle}" Content="Search" Margin="0,10,196,0" VerticalAlignment="Top" Height="30" HorizontalAlignment="Right" Width="114"/>
         <Grid Background="#3F51B5" Margin="0,58,0,0">
-            <DataGrid x:Name="dataGrid" Margin="10,0,10,39" ItemsSource="{Binding Documents}">
-                <DataGrid.Columns>
-                    <DataGridTextColumn Header="ID" />
-                    <DataGridTextColumn Header="Documents"/>
+            <DataGrid x:Name="dataGrid" Margin="10,0,10,39" ItemsSource="{Binding Docs}">
+                <!--<DataGrid.Columns>
+                    <DataGridTextColumn Header="ID" Binding="{Binding Id}"/>
+                    <DataGridTextColumn Header="Documents" Binding="{Binding Name}"/>
                     <DataGridTextColumn Header="Time"></DataGridTextColumn>
                     <DataGridTextColumn Header="Download"></DataGridTextColumn>
 
-                </DataGrid.Columns>
+                </DataGrid.Columns>!-->
             </DataGrid>
             <Button x:Name="button1" Style="{StaticResource ButtonStyle}" Content="Upload" HorizontalAlignment="Left" Margin="10,0,0,10" VerticalAlignment="Bottom" Width="120" Height="24"/>
             <Button x:Name="button2" Style="{StaticResource ButtonStyle}" Content="Refresh" HorizontalAlignment="Left" Margin="182,0,0,10" Width="117" Height="24" VerticalAlignment="Bottom"/>
