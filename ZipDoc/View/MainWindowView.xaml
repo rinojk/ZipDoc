@@ -22,10 +22,10 @@
         </Style>
     </Window.Resources>
     <Grid Background="#FF303F9F">
-        <TextBox x:Name="textBox" Style="{StaticResource TextBoxStyle}" Height="30" Margin="117,10,315,0" TextWrapping="Wrap" VerticalAlignment="Top"/>
-        <Button x:Name="searchButton" Style="{StaticResource ButtonStyle}" Content="Search" Margin="0,10,196,0" VerticalAlignment="Top" Height="30" HorizontalAlignment="Right" Width="114"/>
+        <TextBox x:Name="textBox" Style="{StaticResource TextBoxStyle}" Text="{Binding SearchPattern}" Height="30" Margin="117,10,315,0" TextWrapping="Wrap" VerticalAlignment="Top"/>
+        <Button x:Name="searchButton"  Style="{StaticResource ButtonStyle}" Command="{Binding SearchCommand}" Content="Search" Margin="0,10,196,0" VerticalAlignment="Top" Height="30" HorizontalAlignment="Right" Width="114"/>
         <Grid Background="#3F51B5" Margin="0,58,0,0">
-            <DataGrid x:Name="dataGrid" Margin="10,0,10,39" ItemsSource="{Binding Docs}">
+            <DataGrid x:Name="dataGrid" Margin="10,0,10,39" ItemsSource="{Binding Docs}" SelectedItem="{Binding Selctd}" SelectionMode="Single">
                 <!--<DataGrid.Columns>
                     <DataGridTextColumn Header="ID" Binding="{Binding Id}"/>
                     <DataGridTextColumn Header="Documents" Binding="{Binding Name}"/>
@@ -34,11 +34,13 @@
 
                 </DataGrid.Columns>!-->
             </DataGrid>
-            <Button x:Name="button1" Style="{StaticResource ButtonStyle}" Content="Upload" HorizontalAlignment="Left" Margin="10,0,0,10" VerticalAlignment="Bottom" Width="120" Height="24"/>
-            <Button x:Name="button2" Style="{StaticResource ButtonStyle}" Content="Refresh" HorizontalAlignment="Left" Margin="182,0,0,10" Width="117" Height="24" VerticalAlignment="Bottom"/>
-            <Button x:Name="button3" Style="{StaticResource ButtonStyle}" Content="Exit" HorizontalAlignment="Right" Margin="0,0,10,9" VerticalAlignment="Bottom" Width="116"/>
+            <Button x:Name="UploadButton" Style="{StaticResource ButtonStyle}" Command="{Binding UploadCommand}" Content="Upload" HorizontalAlignment="Left" Margin="135,0,0,9" VerticalAlignment="Bottom" Width="120" Height="24"/>
+            <Button x:Name="RefreshButton" Style="{StaticResource ButtonStyle}" Command="{Binding RefreshCommand}" Content="Refresh" HorizontalAlignment="Left" Margin="260,0,0,10" Width="117" Height="24" VerticalAlignment="Bottom"/>
+            <Button x:Name="ExitButton" Style="{StaticResource ButtonStyle}" Command="{Binding ExitCommand}" Content="Exit" HorizontalAlignment="Right" Margin="0,0,10,9" VerticalAlignment="Bottom" Width="116"/>
+            <Button x:Name="DownloadButton" Style="{StaticResource ButtonStyle}" Command="{Binding DownloadCommand}" Content="Download" HorizontalAlignment="Left" Margin="10,0,0,10" VerticalAlignment="Bottom" Width="120" Height="24"/>
+            <ProgressBar HorizontalAlignment="Left" Minimum="0" Maximum="100" Value="{Binding CurrentProgressValue}" Height="23" Margin="382,307,0,0" VerticalAlignment="Top" Width="229"/>
         </Grid>
-        <Button x:Name="button" Style="{StaticResource ButtonStyle}" Content="Log out" Margin="0,10,10,0" VerticalAlignment="Top" Height="30" HorizontalAlignment="Right" Width="130"/>
+        <Button x:Name="LogoutButton" Style="{StaticResource ButtonStyle}" Content="Log out" Margin="0,10,10,0" VerticalAlignment="Top" Height="30" HorizontalAlignment="Right" Width="130"/>
         <Label x:Name="label"  Content="ZipDoc" HorizontalAlignment="Left" Margin="10,0,0,0" VerticalAlignment="Top" Height="43" Width="102" FontFamily="Gadugi" FontSize="26.667" Foreground="White"/>
     </Grid>
 </Window>

@@ -15,8 +15,8 @@ namespace ZipDoc.Web.Controllers
         private string _connectionString =
             "Database=ZipDocDB;Data Source=us-cdbr-azure-central-a.cloudapp.net;User Id=be3e0d0ebc3029;Password=7507ce92";
 
-        NetworkCredential _accessCredential = new NetworkCredential("a8320691", "1111");
-        string _ftpUri = "ftp://compresser.site40.net/public_html/";
+        NetworkCredential _accessCredential = new NetworkCredential("123", "111");
+        string _ftpUri = "ftp://192.168.1.38/Docs/";
         Connection _conn;
 
         [HttpGet]
