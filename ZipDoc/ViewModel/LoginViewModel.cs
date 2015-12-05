@@ -41,6 +41,7 @@ namespace ZipDoc.ViewModel
         private bool _rememberMe;
         private string _password;
         private string _apiUri = Properties.Settings.Default.ServerUri;
+        public View.LoginView thisview;
         #endregion
 
         #region Commands
@@ -89,6 +90,7 @@ namespace ZipDoc.ViewModel
 
         private async void LoginClick()
         {
+            _password = thisview.passwordBox.Password;
             //_user.PasswordHash = GetMD5(_password);
             using (HttpClient client = new HttpClient()){
                 string uri = $"{_apiUri}api/User/login";
@@ -111,14 +113,25 @@ namespace ZipDoc.ViewModel
                     {
                         Properties.Settings.Default.Token = user.Token;
                         Properties.Settings.Default.Save();
+                        var mainVM = new MainWindowView()
+                        {
+                            DataContext = new MainWindowViewModel(user)
+                        };
+                        mainVM.Show();
+                        Application.Current.MainWindow.Close();
                     }
-                    
-                    //Opening main window
-                    var mainVM = new MainWindowView()
+                    else
                     {
-                        DataContext = new MainWindowViewModel(/*_user*/)};
-                    mainVM.Show();
-                    Application.Current.MainWindow.Close();
+                        MainWindowViewModel mainWindowVM = new MainWindowViewModel(user);
+                        //Opening main window
+                        var mainVM = new MainWindowView()
+                        {
+                            DataContext = mainWindowVM
+                        };
+                        mainWindowVM.thisView = mainVM;
+                        mainVM.Show();
+                        Application.Current.MainWindow.Close();
+                    }
                 }
                 else
                 {

@@ -20,10 +20,12 @@ namespace ZipDoc
 
             if (string.IsNullOrEmpty(ZipDoc.Properties.Settings.Default.Token))
             {
+                LoginViewModel logVM = new LoginViewModel();
                 var loginVM = new LoginView
                 {
-                    DataContext = new LoginViewModel()
+                    DataContext = logVM
                 };
+                logVM.thisview = loginVM;
                 loginVM.Show();
             }
             else

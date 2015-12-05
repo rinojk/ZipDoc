@@ -13,11 +13,12 @@ using System.Windows.Input;
 using Microsoft.Win32;
 using Newtonsoft.Json;
 using ZipDoc.Annotations;
+using ZipDoc.View;
 using ZipDocModel;
 
 namespace ZipDoc.ViewModel
 {
-    class MainWindowViewModel : INotifyPropertyChanged
+    public class MainWindowViewModel : INotifyPropertyChanged
     {
         public MainWindowViewModel(User user)
         {
@@ -42,8 +43,7 @@ namespace ZipDoc.ViewModel
             InitializeCommands();
             _user= new User();
             _user.Token = ZipDoc.Properties.Settings.Default.Token;
-            ShowAllDocs();
-        }
+            ShowAllDocs();}
 
         #region Fields
 
@@ -54,6 +54,8 @@ namespace ZipDoc.ViewModel
         private string _searchPattern;
         private Document _selctd;
         private double _currentProgressValue;
+
+        public Window thisView;
 
         #endregion
 
@@ -120,8 +122,7 @@ namespace ZipDoc.ViewModel
         public ICommand DownloadCommand { get; set; }
         public ICommand RefreshCommand { get; set; }
         public ICommand UploadCommand { get; set; }
-
-        
+        public ICommand LogOutCommand { get; set; }
         #endregion
 
         #region Methods
@@ -134,6 +135,7 @@ namespace ZipDoc.ViewModel
             DownloadCommand = new Command(arg => DownloadClick());
             RefreshCommand = new Command(arg => RefreshClick());
             UploadCommand = new Command(arg => UploadClick());
+            LogOutCommand = new Command(arg => LogOutClick());
         }
         private void Search()
         {
@@ -153,20 +155,56 @@ namespace ZipDoc.ViewModel
                 _allDocuments = JsonConvert.DeserializeObject<ObservableCollection<Document>>(answer);
                 Docs = _allDocuments;
             }}
-        private void DownloadClick()
+        private async void DownloadClick()
         {
-            FtpWebRequest request = (FtpWebRequest)WebRequest.Create("ftp://compresser.site40.net/public_html/timc.ppsx");
+            if (string.IsNullOrEmpty(Selctd.Path)) return;
+
+            var dlg = new SaveFileDialog();
+            dlg.FileName = Path.GetFileNameWithoutExtension(Selctd.Path);
+            dlg.DefaultExt = Path.GetExtension(Selctd.Path);
+            dlg.ShowDialog();
+            bool? result = dlg.ShowDialog();
+            string filepath;
+            if (result == true)
+            {
+                filepath = dlg.FileName;
+            }
+            else
+            {
+                MessageBox.Show("Choose Folder to Save!");
+                return;
+            }
+
+            NetworkCredential credential;
+            using (WebClient client = new WebClient())
+            {
+                string uri = $"{_serverUri}/api/Document/GetFtpCredential?token={_user.Token}";
+                string answer = await client.DownloadStringTaskAsync(uri);
+                try
+                {
+                    credential = JsonConvert.DeserializeObject<NetworkCredential>(answer);
+                }
+                catch (Exception ex)
+                {
+                    MessageBox.Show(ex.Message);
+                    return;
+                }
+            }
+
+            FtpWebRequest request = (FtpWebRequest)WebRequest.Create(Selctd.Path);
             request.Method = WebRequestMethods.Ftp.DownloadFile;
             request.KeepAlive = true;
             request.UsePassive = true;
             request.UseBinary = true;
-            request.Credentials = new NetworkCredential("a8320691", "1111");
+            request.Credentials = credential;
             FtpWebResponse response = (FtpWebResponse)request.GetResponse();
-
 
             Stream responseStream = response.GetResponseStream();
             StreamReader reader = new StreamReader(responseStream);
-            using (FileStream writer = new FileStream(@"F:\FileName.ppsx", FileMode.Create))
+
+            
+
+            using (FileStream writer = new FileStream(filepath, FileMode.Create))
             {
 
                 long length = response.ContentLength;
@@ -255,8 +293,24 @@ namespace ZipDoc.ViewModel
             FtpWebResponse response = (FtpWebResponse)request.GetResponse();
 
             Console.WriteLine("Upload File Complete, status {0}", response.StatusDescription);
-
             response.Close();
+        }
+        private void LogOutClick()
+        {
+            string token = ZipDoc.Properties.Settings.Default.Token;
+            if (!string.IsNullOrEmpty(token))
+            {
+                Properties.Settings.Default.Token = string.Empty;
+                Properties.Settings.Default.Save();
+            }
+            LoginViewModel logVM = new LoginViewModel();
+            LoginView loginView = new LoginView()
+            {
+                DataContext = logVM
+            };
+            logVM.thisview = loginView;
+            loginView.Show();
+            thisView.Close();
         }
         #endregion
 

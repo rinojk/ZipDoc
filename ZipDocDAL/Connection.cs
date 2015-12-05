@@ -21,10 +21,18 @@ namespace ZipDocDAL
         MySqlConnection _connection;
         
 
-        public void OpenConnection()
+        public bool OpenConnection()
         {
             _connection = new MySqlConnection(_connString);
-            _connection.Open();
+            try
+            {
+                _connection.Open();
+                return true;
+            }
+            catch (Exception ex)
+            {
+                return false;
+            }
         }
 
         public void CloseConnection()
@@ -130,9 +138,11 @@ namespace ZipDocDAL
 
         public IEnumerable<Document> SearchDocuments(string pattern)
         {
-            string query = $"SELECT * FROM documents WHERE docname LIKE '%{pattern}%'";
+            MySqlCommand command = _connection.CreateCommand();
+            command.CommandText = "SELECT * FROM documents WHERE docname LIKE ?pattern";
+            command.Parameters.Add("?pattern", MySqlDbType.VarChar).Value = pattern;
             List<Document> documents = new List<Document>();
-            MySqlCommand command = new MySqlCommand(query, _connection);
+            
             MySqlDataReader dataReader = command.ExecuteReader();
             while (dataReader.Read())
             {
@@ -150,8 +160,10 @@ namespace ZipDocDAL
 
         public bool UploadDocument(Document doc)
         {
-            string query = $"SELECT * FROM documents WHERE (docname = '{doc.Name}')";
-            MySqlCommand command = new MySqlCommand(query, _connection);
+            MySqlCommand command = _connection.CreateCommand();
+
+            command.CommandText = "SELECT * FROM documents WHERE (docname = ?docname)";
+            command.Parameters.Add("?docname", MySqlDbType.VarChar).Value = doc.Name;
             using (MySqlDataReader dataReader = command.ExecuteReader())
             {
                 if (dataReader.HasRows)
@@ -159,24 +171,33 @@ namespace ZipDocDAL
                 dataReader.Close();
             }
             command.Dispose();
-            query = $"INSERT INTO documents (docname, size, path, author, description) VALUES ('{doc.Name}', {doc.Size}, '{doc.Path}', '{doc.Author}', '{doc.Description}')";
-            command = new MySqlCommand(query, _connection);
+            command = _connection.CreateCommand();
+
+            command.CommandText = "INSERT INTO documents (docname, size, path, author, description) VALUES (?docname, ?size, ?path, ?author, ?description)";
+            command.Parameters.Add("?docname", MySqlDbType.VarChar).Value = doc.Name;
+            command.Parameters.Add("?size", MySqlDbType.Double).Value = doc.Size;
+            command.Parameters.Add("?path", MySqlDbType.Text).Value = doc.Path;
+            command.Parameters.Add("?author", MySqlDbType.VarChar).Value = doc.Author;
+            command.Parameters.Add("?description", MySqlDbType.VarChar).Value = doc.Description;
+
             command.ExecuteNonQuery();
             return true;
         }
 
         public bool DeleteDocument(long id)
         {
-            string query = $"DELETE FROM documents WHERE id={id}";
-            MySqlCommand command = new MySqlCommand(query, _connection);
+            MySqlCommand command = _connection.CreateCommand();
+            command.CommandText = "DELETE FROM documents WHERE id=?id";
+            command.Parameters.Add("?id", MySqlDbType.Int32).Value = id;
             command.ExecuteNonQuery();
             return true;
         }
 
         public string GetUsernameByToken(string token)
         {
-            string query = $"SELECT username FROM users WHERE token='{token}'";
-            MySqlCommand command = new MySqlCommand(query, _connection);
+            MySqlCommand command = _connection.CreateCommand();
+            command.CommandText = "SELECT username FROM users WHERE token=?token";
+            command.Parameters.Add("?token", MySqlDbType.VarChar).Value = token;
             using (MySqlDataReader dataReader = command.ExecuteReader())
             {
                 while (dataReader.Read())
