@@ -58,10 +58,6 @@
       <Project>{00014b71-3915-4ad8-95bf-a5fee3481796}</Project>
       <Name>ZipDoc.Register</Name>
     </ProjectReference>
-    <ProjectReference Include="..\ZipDoc.Web\ZipDoc.Web.csproj">
-      <Project>{94c42ce9-4fa6-493f-8536-be631257546e}</Project>
-      <Name>ZipDoc.Web</Name>
-    </ProjectReference>
     <ProjectReference Include="..\ZipDocDAL\ZipDocDAL.csproj">
       <Project>{cdc7aabe-90a7-4dbe-9c8e-4accf51a44ae}</Project>
       <Name>ZipDocDAL</Name>
@@ -74,6 +70,9 @@
       <Project>{7fe8f61b-ca06-498f-8f92-b7b67e8b4d87}</Project>
       <Name>ZipDoc</Name>
     </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="app.config" />
   </ItemGroup>
   <Choose>
     <When Condition="'$(VisualStudioVersion)' == '10.0' And '$(IsCodedUITest)' == 'True'">

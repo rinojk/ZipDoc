@@ -1,46 +1,117 @@
-C:\Users\SEREY\Google Диск\KPI\Лаби\ООП\ZipDoc\ZipDoc\ZipDoc.Web\bin\roslyn\csc.exe
-C:\Users\SEREY\Google Диск\KPI\Лаби\ООП\ZipDoc\ZipDoc\ZipDoc.Web\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
-C:\Users\SEREY\Google Диск\KPI\Лаби\ООП\ZipDoc\ZipDoc\ZipDoc.Web\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
-C:\Users\SEREY\Google Диск\KPI\Лаби\ООП\ZipDoc\ZipDoc\ZipDoc.Web\bin\roslyn\Microsoft.CodeAnalysis.dll
-C:\Users\SEREY\Google Диск\KPI\Лаби\ООП\ZipDoc\ZipDoc\ZipDoc.Web\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
-C:\Users\SEREY\Google Диск\KPI\Лаби\ООП\ZipDoc\ZipDoc\ZipDoc.Web\bin\roslyn\Microsoft.CSharp.Core.targets
-C:\Users\SEREY\Google Диск\KPI\Лаби\ООП\ZipDoc\ZipDoc\ZipDoc.Web\bin\roslyn\Microsoft.VisualBasic.Core.targets
-C:\Users\SEREY\Google Диск\KPI\Лаби\ООП\ZipDoc\ZipDoc\ZipDoc.Web\bin\roslyn\System.Collections.Immutable.dll
-C:\Users\SEREY\Google Диск\KPI\Лаби\ООП\ZipDoc\ZipDoc\ZipDoc.Web\bin\roslyn\System.Reflection.Metadata.dll
-C:\Users\SEREY\Google Диск\KPI\Лаби\ООП\ZipDoc\ZipDoc\ZipDoc.Web\bin\roslyn\vbc.exe
-C:\Users\SEREY\Google Диск\KPI\Лаби\ООП\ZipDoc\ZipDoc\ZipDoc.Web\bin\roslyn\VBCSCompiler.exe
-C:\Users\SEREY\Google Диск\KPI\Лаби\ООП\ZipDoc\ZipDoc\ZipDoc.Web\bin\roslyn\VBCSCompiler.exe.config
-C:\Users\SEREY\Google Диск\KPI\Лаби\ООП\ZipDoc\ZipDoc\ZipDoc.Web\bin\ZipDoc.Web.dll.config
-C:\Users\SEREY\Google Диск\KPI\Лаби\ООП\ZipDoc\ZipDoc\ZipDoc.Web\bin\ZipDoc.Web.dll
-C:\Users\SEREY\Google Диск\KPI\Лаби\ООП\ZipDoc\ZipDoc\ZipDoc.Web\bin\ZipDoc.Web.pdb
-C:\Users\SEREY\Google Диск\KPI\Лаби\ООП\ZipDoc\ZipDoc\ZipDoc.Web\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
-C:\Users\SEREY\Google Диск\KPI\Лаби\ООП\ZipDoc\ZipDoc\ZipDoc.Web\bin\Microsoft.Web.Infrastructure.dll
-C:\Users\SEREY\Google Диск\KPI\Лаби\ООП\ZipDoc\ZipDoc\ZipDoc.Web\bin\Newtonsoft.Json.dll
-C:\Users\SEREY\Google Диск\KPI\Лаби\ООП\ZipDoc\ZipDoc\ZipDoc.Web\bin\System.Net.Http.Formatting.dll
-C:\Users\SEREY\Google Диск\KPI\Лаби\ООП\ZipDoc\ZipDoc\ZipDoc.Web\bin\System.Web.Helpers.dll
-C:\Users\SEREY\Google Диск\KPI\Лаби\ООП\ZipDoc\ZipDoc\ZipDoc.Web\bin\System.Web.Http.dll
-C:\Users\SEREY\Google Диск\KPI\Лаби\ООП\ZipDoc\ZipDoc\ZipDoc.Web\bin\System.Web.Http.WebHost.dll
-C:\Users\SEREY\Google Диск\KPI\Лаби\ООП\ZipDoc\ZipDoc\ZipDoc.Web\bin\System.Web.Mvc.dll
-C:\Users\SEREY\Google Диск\KPI\Лаби\ООП\ZipDoc\ZipDoc\ZipDoc.Web\bin\System.Web.Razor.dll
-C:\Users\SEREY\Google Диск\KPI\Лаби\ООП\ZipDoc\ZipDoc\ZipDoc.Web\bin\System.Web.Webpages.Deployment.dll
-C:\Users\SEREY\Google Диск\KPI\Лаби\ООП\ZipDoc\ZipDoc\ZipDoc.Web\bin\System.Web.Webpages.dll
-C:\Users\SEREY\Google Диск\KPI\Лаби\ООП\ZipDoc\ZipDoc\ZipDoc.Web\bin\System.Web.Webpages.Razor.dll
-C:\Users\SEREY\Google Диск\KPI\Лаби\ООП\ZipDoc\ZipDoc\ZipDoc.Web\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
-C:\Users\SEREY\Google Диск\KPI\Лаби\ООП\ZipDoc\ZipDoc\ZipDoc.Web\bin\System.Web.Razor.xml
-C:\Users\SEREY\Google Диск\KPI\Лаби\ООП\ZipDoc\ZipDoc\ZipDoc.Web\bin\System.Web.Webpages.xml
-C:\Users\SEREY\Google Диск\KPI\Лаби\ООП\ZipDoc\ZipDoc\ZipDoc.Web\bin\System.Web.Webpages.Deployment.xml
-C:\Users\SEREY\Google Диск\KPI\Лаби\ООП\ZipDoc\ZipDoc\ZipDoc.Web\bin\System.Web.Webpages.Razor.xml
-C:\Users\SEREY\Google Диск\KPI\Лаби\ООП\ZipDoc\ZipDoc\ZipDoc.Web\bin\System.Web.Helpers.xml
-C:\Users\SEREY\Google Диск\KPI\Лаби\ООП\ZipDoc\ZipDoc\ZipDoc.Web\bin\System.Web.Mvc.xml
-C:\Users\SEREY\Google Диск\KPI\Лаби\ООП\ZipDoc\ZipDoc\ZipDoc.Web\bin\Newtonsoft.Json.xml
-C:\Users\SEREY\Google Диск\KPI\Лаби\ООП\ZipDoc\ZipDoc\ZipDoc.Web\bin\System.Net.Http.Formatting.xml
-C:\Users\SEREY\Google Диск\KPI\Лаби\ООП\ZipDoc\ZipDoc\ZipDoc.Web\bin\System.Web.Http.xml
-C:\Users\SEREY\Google Диск\KPI\Лаби\ООП\ZipDoc\ZipDoc\ZipDoc.Web\bin\System.Web.Http.WebHost.xml
-C:\Users\SEREY\Google Диск\KPI\Лаби\ООП\ZipDoc\ZipDoc\ZipDoc.Web\obj\Debug\ZipDoc.Web.csprojResolveAssemblyReference.cache
-C:\Users\SEREY\Google Диск\KPI\Лаби\ООП\ZipDoc\ZipDoc\ZipDoc.Web\obj\Debug\ZipDoc.Web.dll
-C:\Users\SEREY\Google Диск\KPI\Лаби\ООП\ZipDoc\ZipDoc\ZipDoc.Web\obj\Debug\ZipDoc.Web.pdb
-C:\Users\SEREY\Google Диск\KPI\Лаби\ООП\ZipDoc\ZipDoc\ZipDoc.Web\bin\ZipDocDAL.dll
-C:\Users\SEREY\Google Диск\KPI\Лаби\ООП\ZipDoc\ZipDoc\ZipDoc.Web\bin\ZipDocModel.dll
-C:\Users\SEREY\Google Диск\KPI\Лаби\ООП\ZipDoc\ZipDoc\ZipDoc.Web\bin\MySql.Data.dll
-C:\Users\SEREY\Google Диск\KPI\Лаби\ООП\ZipDoc\ZipDoc\ZipDoc.Web\bin\ZipDocDAL.pdb
-C:\Users\SEREY\Google Диск\KPI\Лаби\ООП\ZipDoc\ZipDoc\ZipDoc.Web\bin\ZipDocModel.pdb
+E:\ZipDoc\ZipDoc.Web\bin\ApplicationInsights.config
+E:\ZipDoc\ZipDoc.Web\bin\roslyn\csc.exe
+E:\ZipDoc\ZipDoc.Web\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+E:\ZipDoc\ZipDoc.Web\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+E:\ZipDoc\ZipDoc.Web\bin\roslyn\Microsoft.CodeAnalysis.dll
+E:\ZipDoc\ZipDoc.Web\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+E:\ZipDoc\ZipDoc.Web\bin\roslyn\Microsoft.CSharp.Core.targets
+E:\ZipDoc\ZipDoc.Web\bin\roslyn\Microsoft.VisualBasic.Core.targets
+E:\ZipDoc\ZipDoc.Web\bin\roslyn\System.Collections.Immutable.dll
+E:\ZipDoc\ZipDoc.Web\bin\roslyn\System.Reflection.Metadata.dll
+E:\ZipDoc\ZipDoc.Web\bin\roslyn\vbc.exe
+E:\ZipDoc\ZipDoc.Web\bin\roslyn\VBCSCompiler.exe
+E:\ZipDoc\ZipDoc.Web\bin\roslyn\VBCSCompiler.exe.config
+E:\ZipDoc\ZipDoc.Web\bin\ZipDoc.Web.dll.config
+E:\ZipDoc\ZipDoc.Web\bin\ZipDoc.Web.dll
+E:\ZipDoc\ZipDoc.Web\bin\ZipDoc.Web.pdb
+E:\ZipDoc\ZipDoc.Web\bin\Antlr3.Runtime.dll
+E:\ZipDoc\ZipDoc.Web\bin\EntityFramework.dll
+E:\ZipDoc\ZipDoc.Web\bin\EntityFramework.SqlServer.dll
+E:\ZipDoc\ZipDoc.Web\bin\Microsoft.AI.Agent.Intercept.dll
+E:\ZipDoc\ZipDoc.Web\bin\Microsoft.AI.DependencyCollector.dll
+E:\ZipDoc\ZipDoc.Web\bin\Microsoft.AI.PerfCounterCollector.dll
+E:\ZipDoc\ZipDoc.Web\bin\Microsoft.AI.ServerTelemetryChannel.dll
+E:\ZipDoc\ZipDoc.Web\bin\Microsoft.AI.Web.dll
+E:\ZipDoc\ZipDoc.Web\bin\Microsoft.AI.WindowsServer.dll
+E:\ZipDoc\ZipDoc.Web\bin\Microsoft.ApplicationInsights.dll
+E:\ZipDoc\ZipDoc.Web\bin\Microsoft.AspNet.Identity.Core.dll
+E:\ZipDoc\ZipDoc.Web\bin\Microsoft.AspNet.Identity.EntityFramework.dll
+E:\ZipDoc\ZipDoc.Web\bin\Microsoft.AspNet.Identity.Owin.dll
+E:\ZipDoc\ZipDoc.Web\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+E:\ZipDoc\ZipDoc.Web\bin\Microsoft.Owin.dll
+E:\ZipDoc\ZipDoc.Web\bin\Microsoft.Owin.Host.SystemWeb.dll
+E:\ZipDoc\ZipDoc.Web\bin\Microsoft.Owin.Security.Cookies.dll
+E:\ZipDoc\ZipDoc.Web\bin\Microsoft.Owin.Security.dll
+E:\ZipDoc\ZipDoc.Web\bin\Microsoft.Owin.Security.Facebook.dll
+E:\ZipDoc\ZipDoc.Web\bin\Microsoft.Owin.Security.Google.dll
+E:\ZipDoc\ZipDoc.Web\bin\Microsoft.Owin.Security.MicrosoftAccount.dll
+E:\ZipDoc\ZipDoc.Web\bin\Microsoft.Owin.Security.OAuth.dll
+E:\ZipDoc\ZipDoc.Web\bin\Microsoft.Owin.Security.Twitter.dll
+E:\ZipDoc\ZipDoc.Web\bin\Microsoft.Web.Infrastructure.dll
+E:\ZipDoc\ZipDoc.Web\bin\Newtonsoft.Json.dll
+E:\ZipDoc\ZipDoc.Web\bin\Owin.dll
+E:\ZipDoc\ZipDoc.Web\bin\System.Net.Http.Formatting.dll
+E:\ZipDoc\ZipDoc.Web\bin\System.Web.Helpers.dll
+E:\ZipDoc\ZipDoc.Web\bin\System.Web.Http.dll
+E:\ZipDoc\ZipDoc.Web\bin\System.Web.Http.WebHost.dll
+E:\ZipDoc\ZipDoc.Web\bin\System.Web.Mvc.dll
+E:\ZipDoc\ZipDoc.Web\bin\System.Web.Optimization.dll
+E:\ZipDoc\ZipDoc.Web\bin\System.Web.Razor.dll
+E:\ZipDoc\ZipDoc.Web\bin\System.Web.WebPages.Deployment.dll
+E:\ZipDoc\ZipDoc.Web\bin\System.Web.WebPages.dll
+E:\ZipDoc\ZipDoc.Web\bin\System.Web.WebPages.Razor.dll
+E:\ZipDoc\ZipDoc.Web\bin\WebGrease.dll
+E:\ZipDoc\ZipDoc.Web\bin\ZipDocDAL.dll
+E:\ZipDoc\ZipDoc.Web\bin\ZipDocModel.dll
+E:\ZipDoc\ZipDoc.Web\bin\MySql.Data.dll
+E:\ZipDoc\ZipDoc.Web\bin\ZipDocDAL.pdb
+E:\ZipDoc\ZipDoc.Web\bin\ZipDocModel.pdb
+E:\ZipDoc\ZipDoc.Web\bin\Microsoft.AI.DependencyCollector.xml
+E:\ZipDoc\ZipDoc.Web\bin\Microsoft.AI.ServerTelemetryChannel.xml
+E:\ZipDoc\ZipDoc.Web\bin\Microsoft.AI.Web.xml
+E:\ZipDoc\ZipDoc.Web\bin\Microsoft.AI.WindowsServer.xml
+E:\ZipDoc\ZipDoc.Web\bin\Microsoft.ApplicationInsights.xml
+E:\ZipDoc\ZipDoc.Web\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+E:\ZipDoc\ZipDoc.Web\bin\System.Web.Helpers.xml
+E:\ZipDoc\ZipDoc.Web\bin\System.Web.Mvc.xml
+E:\ZipDoc\ZipDoc.Web\bin\System.Web.Optimization.xml
+E:\ZipDoc\ZipDoc.Web\bin\System.Web.Razor.xml
+E:\ZipDoc\ZipDoc.Web\bin\System.Web.WebPages.xml
+E:\ZipDoc\ZipDoc.Web\bin\System.Web.WebPages.Deployment.xml
+E:\ZipDoc\ZipDoc.Web\bin\System.Web.WebPages.Razor.xml
+E:\ZipDoc\ZipDoc.Web\bin\Antlr3.Runtime.pdb
+E:\ZipDoc\ZipDoc.Web\bin\Newtonsoft.Json.xml
+E:\ZipDoc\ZipDoc.Web\bin\System.Net.Http.Formatting.xml
+E:\ZipDoc\ZipDoc.Web\bin\System.Web.Http.xml
+E:\ZipDoc\ZipDoc.Web\bin\System.Web.Http.WebHost.xml
+E:\ZipDoc\ZipDoc.Web\bin\EntityFramework.xml
+E:\ZipDoc\ZipDoc.Web\bin\EntityFramework.SqlServer.xml
+E:\ZipDoc\ZipDoc.Web\bin\Microsoft.AspNet.Identity.Core.xml
+E:\ZipDoc\ZipDoc.Web\bin\Microsoft.AspNet.Identity.Owin.xml
+E:\ZipDoc\ZipDoc.Web\bin\Microsoft.AspNet.Identity.EntityFramework.xml
+E:\ZipDoc\ZipDoc.Web\bin\Microsoft.Owin.xml
+E:\ZipDoc\ZipDoc.Web\bin\Microsoft.Owin.Host.SystemWeb.xml
+E:\ZipDoc\ZipDoc.Web\bin\Microsoft.Owin.Security.xml
+E:\ZipDoc\ZipDoc.Web\bin\Microsoft.Owin.Security.Facebook.xml
+E:\ZipDoc\ZipDoc.Web\bin\Microsoft.Owin.Security.Cookies.xml
+E:\ZipDoc\ZipDoc.Web\bin\Microsoft.Owin.Security.OAuth.xml
+E:\ZipDoc\ZipDoc.Web\bin\Microsoft.Owin.Security.Google.xml
+E:\ZipDoc\ZipDoc.Web\bin\Microsoft.Owin.Security.Twitter.xml
+E:\ZipDoc\ZipDoc.Web\bin\Microsoft.Owin.Security.MicrosoftAccount.xml
+E:\ZipDoc\ZipDoc.Web\bin\ru\System.Web.Helpers.resources.dll
+E:\ZipDoc\ZipDoc.Web\bin\ru\System.Web.Mvc.resources.dll
+E:\ZipDoc\ZipDoc.Web\bin\ru\System.Web.Optimization.resources.dll
+E:\ZipDoc\ZipDoc.Web\bin\ru\System.Web.Razor.resources.dll
+E:\ZipDoc\ZipDoc.Web\bin\ru\System.Web.WebPages.resources.dll
+E:\ZipDoc\ZipDoc.Web\bin\ru\System.Web.WebPages.Deployment.resources.dll
+E:\ZipDoc\ZipDoc.Web\bin\ru\System.Web.WebPages.Razor.resources.dll
+E:\ZipDoc\ZipDoc.Web\bin\ru\System.Net.Http.Formatting.resources.dll
+E:\ZipDoc\ZipDoc.Web\bin\ru\System.Web.Http.resources.dll
+E:\ZipDoc\ZipDoc.Web\bin\ru\System.Web.Http.WebHost.resources.dll
+E:\ZipDoc\ZipDoc.Web\bin\ru\EntityFramework.resources.dll
+E:\ZipDoc\ZipDoc.Web\bin\ru\EntityFramework.SqlServer.resources.dll
+E:\ZipDoc\ZipDoc.Web\bin\ru\Microsoft.AspNet.Identity.Core.resources.dll
+E:\ZipDoc\ZipDoc.Web\bin\ru\Microsoft.AspNet.Identity.Owin.resources.dll
+E:\ZipDoc\ZipDoc.Web\bin\ru\Microsoft.AspNet.Identity.EntityFramework.resources.dll
+E:\ZipDoc\ZipDoc.Web\bin\ru\Microsoft.Owin.resources.dll
+E:\ZipDoc\ZipDoc.Web\bin\ru\Microsoft.Owin.Host.SystemWeb.resources.dll
+E:\ZipDoc\ZipDoc.Web\bin\ru\Microsoft.Owin.Security.resources.dll
+E:\ZipDoc\ZipDoc.Web\bin\ru\Microsoft.Owin.Security.Facebook.resources.dll
+E:\ZipDoc\ZipDoc.Web\bin\ru\Microsoft.Owin.Security.Google.resources.dll
+E:\ZipDoc\ZipDoc.Web\bin\ru\Microsoft.Owin.Security.Twitter.resources.dll
+E:\ZipDoc\ZipDoc.Web\bin\ru\Microsoft.Owin.Security.MicrosoftAccount.resources.dll
+E:\ZipDoc\ZipDoc.Web\obj\Debug\ZipDoc.Web.csprojResolveAssemblyReference.cache
+E:\ZipDoc\ZipDoc.Web\obj\Debug\ZipDoc.Web.dll
+E:\ZipDoc\ZipDoc.Web\obj\Debug\ZipDoc.Web.pdb
+E:\ZipDoc\ZipDoc.Web\bin\Ninject.dll
+E:\ZipDoc\ZipDoc.Web\bin\Ninject.xml

@@ -7,3 +7,12 @@ C:\Users\SEREY\Google Диск\KPI\Лаби\ООП\ZipDoc\ZipDoc\ZipDocDAL\obj\D
 C:\Users\SEREY\Google Диск\KPI\Лаби\ООП\ZipDoc\ZipDoc\ZipDocDAL\obj\Debug\ZipDocDAL.csprojResolveAssemblyReference.cache
 C:\Users\SEREY\Google Диск\KPI\Лаби\ООП\ZipDoc\ZipDoc\ZipDocDAL\bin\Debug\ZipDocModel.dll
 C:\Users\SEREY\Google Диск\KPI\Лаби\ООП\ZipDoc\ZipDoc\ZipDocDAL\bin\Debug\ZipDocModel.pdb
+E:\ZipDoc\ZipDocDAL\bin\Debug\ZipDocDAL.dll.config
+E:\ZipDoc\ZipDocDAL\bin\Debug\ZipDocDAL.dll
+E:\ZipDoc\ZipDocDAL\bin\Debug\ZipDocDAL.pdb
+E:\ZipDoc\ZipDocDAL\bin\Debug\MySql.Data.dll
+E:\ZipDoc\ZipDocDAL\bin\Debug\ZipDocModel.dll
+E:\ZipDoc\ZipDocDAL\bin\Debug\ZipDocModel.pdb
+E:\ZipDoc\ZipDocDAL\obj\Debug\ZipDocDAL.csprojResolveAssemblyReference.cache
+E:\ZipDoc\ZipDocDAL\obj\Debug\ZipDocDAL.dll
+E:\ZipDoc\ZipDocDAL\obj\Debug\ZipDocDAL.pdb
